@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="icon/Tic-Tac-Toe-icon.png">
+
+    <title>Tic Tac Toe/Rules</title>
+
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Bootstrap/starter-template.css">
+    <link rel="stylesheet" href="css/Bootstrap/ie10-viewport-bug-workaround.css">
+
+
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Tic Tac Toe</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Play</a></li>
+                <li class="active"><a href="About.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="well marginAbout">
+        <div class="row">
+            <div class="col-xs-6 col-md-4"><h1 >About Game</h1></div>
+            <div class=".col-xs-12 .col-md-8"><p class="pAbout">Tic-tac-toe is a paper-and-pencil game for two players,
+                X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of
+                their marks in a horizontal, vertical, or diagonal row wins the game.</p></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="well marginStrategi">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" style="text-align: center;"><h1  style="margin: auto;">Strategies</h1>
+            </div>
+        </div>
+        <ol class="olNumbers">
+            <div class="row ">
+                <div class="col-md-1">
+                    <li><h2 class="h2Strategies">Win:</h2></li>
+                </div>
+                <div class="col-md-8" style="margin-left: -21px">
+                    <p class="pStrategies">If the player has two in a row, they can place a third to get three in a
+                        row.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <li><h2 class="h2Strategies">Block:</h2></li>
+                </div>
+                <div class="col-md-10">
+                    <p class="pStrategies">If the opponent has two in a row, the player must play the third themselves
+                        to block the opponent.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <li><h2 class="h2Strategies">Fork:</h2></li>
+                </div>
+                <div class="col-md-10" style="margin-left: -10px">
+                    <p class="pStrategies">Create an opportunity where the player has two threats to win.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <li><h2 class="h2Strategies">Blocking an opponent's fork:</h2></li>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-2" style="margin-left: 50px">
+                    <h3 class="h2Strategies">Option 1:</h3>
+                </div>
+                <div class="col-md-8">
+                    <p class="pStrategies" style="margin-left: -84px; margin-top: 21px; width:1050px;">The
+                        player
+                        should create two in a row to force the opponent into defending, as long as it doesn't
+                        result in them creating a fork. For example, if "X" has a corner, "O" has the center,
+                        and
+                        "X" has the opposite corner as well, "O" must not play a corner in order to win.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2" style="margin-left: 50px">
+                    <h3 class="h2Strategies">Option 2:</h3>
+                </div>
+                <div class="col-md-8">
+                    <p class="pStrategies" style="margin-left: -84px; margin-top: 21px;">
+                        If there is a configuration where the opponent can fork, the player should block that fork.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <li><h2 class="h2Strategies">Center:</h2></li>
+                </div>
+                <div class="col-md-10" style="margin-left: 15px">
+                    <p class="pStrategies">A player marks the center.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <li><h2 class="h2Strategies">Opposite corner:</h2></li>
+                </div>
+                <div class="col-md-8" style="margin-left: -75px">
+                    <p class="pStrategies">If the opponent is in the corner, the player plays the opposite corner.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <li><h2 class="h2Strategies">Empty corner:</h2></li>
+                </div>
+                <div class="col-md-8" style="margin-left: -110px">
+                    <p class="pStrategies">The player plays in a corner square.</p>
+                </div>
+            </div>
+
+        </ol>
+    </div>
+</div>
+
+</body>
+</html>
